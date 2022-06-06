@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>CurentWeather</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <form action="/" method="post">
+          <input type="text" name="cityName" placeholder="City Name" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+      <div class="wave -one"></div>
+      <div class="wave -two"></div>
+      <div class="wave -three"></div>
+
+      <div id="weathercon">
+        <img  src="<%=image%>" alt="" class="fas">
+       <p><%=des%></p>
+      </div>
+      <div class="info">
+        <h1 class="location"><i class="fas fa-street-view"></i><%=location%>,<%=country%></h1>
+        <p id="date"><%=date%></p>
+        <h1 class="temp"><%=temp%>°C</h1>
+        <h3 class="tempmin_max">MIN:<%=Min_temp%>°C|MAX:<%=Max_temp%>°C</h3>
+      </div>
+    </div>
+
+ 
+  </body>
+</html>

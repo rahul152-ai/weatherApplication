@@ -1,0 +1,11 @@
+#wisual stdio code
+.vscode/**
+#desktop service store files
+.DS_Store
+#Temp directories
+node_modules
+
+package-lock.json
+
+#api keys
+.env

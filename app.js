@@ -18,9 +18,6 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   const city = req.body.cityName;
   const link = process.env.FRISTPART+city+process.env.SECONDPART;
-    // "https://api.openweathermap.org/data/2.5/weather?q=" +
-    // city +
-    // "&appid=cebbc5972898e06ab0a16f78b1ea6575&units=metric";
   https.get(link, (response) => {
     response.on("data", (data) => {  
       var weathers = JSON.parse(data);
